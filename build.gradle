@@ -3,10 +3,7 @@
 buildscript {
     
     repositories {
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/central/'
-//      name 'Google'
-        }
+        mavenCentral()
         google()
         jcenter()
     }
@@ -21,10 +18,7 @@ buildscript {
 
 allprojects {
     repositories {
-        maven {
-            url 'https://maven.google.com'
-//      name 'Google'
-        }
+        mavenCentral()
         google()
         jcenter()
     }
