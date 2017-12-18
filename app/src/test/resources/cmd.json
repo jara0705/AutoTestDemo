@@ -1,0 +1,32 @@
+{
+  "cmd_down_list": [
+    {
+      "cmd_type": "1",
+      "cmd_code": "700001",
+      "to_dev_id": "huawei_u10_3ab836f",
+      "to_app_id": "800100001",
+      "to_app_client_id": "800100001_3ab32eb",
+      "cmd_serial": "12345678901234567890",
+      "cmd_createtime": "2016-11-22 14:23:07",
+      "exec_timeout_secs": "3600",
+      "cmd_params": {
+        "dd":"dd","test":"test","a":"aa","b":"bb"
+      }
+    },
+    {
+      "cmd_type": "1",
+      "cmd_code": "700002",
+      "to_dev_id": "huawei_u10_3ab836f",
+      "to_app_id": "800100001",
+      "to_app_client_id": "800100001_3ab32eb",
+      "cmd_serial": "12345678901234567890",
+      "cmd_createtime": "2016-11-22 14:23:07",
+      "exec_timeout_secs": "3600",
+      "cmd_params": {
+        "name": "19"
+      }
+    }
+  ]
+}
+
+
