@@ -18,6 +18,7 @@ import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
 import java.lang.reflect.Type;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,15 +30,17 @@ import java.util.List;
 public class GsonTest {
 
     private static final String TAG = "GsonTest";
-
+    private static final String JSON_ROOT_PATH = "/json/";
+    private static String jsonFullPath;
     @Before
     public void setUp() throws Exception {
         ShadowLog.stream = System.out;
     }
 
     @Test
-    public void test() {
-        String path = "E:\\workspace\\AutoTestDemo\\app\\src\\test\\resources\\cmd.json";
+    public void test() throws URISyntaxException {
+//        String path = "E:\\workspace\\AutoTestDemo\\app\\src\\test\\resources\\cmd.json";
+        String path = getClass().getResource(JSON_ROOT_PATH).toURI().getPath() + "cmd.json";
         String result = FileUtils.readFile(path, "UTF-8").toString();
         Log.i(TAG, "--->" + result);
         try {
